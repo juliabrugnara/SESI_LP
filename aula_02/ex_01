@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+/*1) Classificação de Idade
+Leia a idade de uma pessoa e informe:
+Criança (0–12)
+Adolescente (13–17)
+Adulto (18–59)
+Idoso (60+)*/
+
+int main () {
+
+	int idd;
+
+	printf("qual sua idade?: ");
+	scanf("%i", &idd);
+
+	if(idd >= 60) {
+		printf("IDOSO");
+
+	} else if(idd >= 18) {
+		printf("ADULTO");
+
+	} else if(idd >= 13) {
+		printf("ADOLECENTE");
+
+	} else{
+		printf("CRIANÇA");
+	}
+
+}

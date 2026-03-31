@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+/*4) Verificação de Aprovação
+Leia a nota de um aluno (0 a 10).
+Informe:
+Aprovado (nota >= 7)
+Recuperação (nota entre 5 e 6.9)
+Reprovado (nota < 5)*/
+
+int main(){
+    
+  float nota;
+  
+  printf("digite primeira nota: ");
+  scanf("%f", &nota);
+    
+    if(nota >= 7){
+        printf("aprovado");
+        
+    }else if(nota <= 6.9){
+        printf("recuperação");
+        
+    }else{
+        printf("reprovado");
+    }
+}
