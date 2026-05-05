@@ -1,32 +1,85 @@
 # Guia de Comandos Git Bash
 
 ## Configuração Inicial
-### Configure seu usuário e email do Git:
 
-git config --global user.name "Júlia Maria"  
+Defina seu nome de usuário:
+```bash
+git config --global user.name "Júlia Maria"
+```
+
+Defina seu e-mail:
+```bash
 git config --global user.email "julia.brugnara@aluno.senai.br"
+```
+
+---
 
 ## Clonar Repositório
+
 Clone um repositório para sua máquina local:
-git clone <URL do repositório>
+```bash
+git clone <URL_DO_REPOSITORIO>
+```
+
+---
 
 ## Comandos Básicos
-- *Verificar status*:
-- ``` bash
-`git status`
 
-- *Adicionar arquivos*:
-  ``` bash
-  git add .` (todos) ou `git add <arquivo>`
-- *Commitar mudanças*: `git commit -m "Mensagem do commit"`
-- *Puxar atualizações (pull)*: `git pull`
-- *Enviar mudanças (push)*: `git push`
+Verificar o status dos arquivos:
+```bash
+git status
+```
 
-## Sincronizar com Repositório Remoto
-- `git pull` (baixar e mesclar)
-- `git push` (enviar mudanças)
+Adicionar todos os arquivos alterados:
+```bash
+git add .
+```
 
-## Outros Comandos Úteis
-- *Ver histórico*: `git log`
-- *Criar branch*: `git branch <nome>`
-- *Trocar branch*: `git checkout <nome>`
+Adicionar um arquivo específico:
+```bash
+git add <NOME_DO_ARQUIVO>
+```
+
+Salvar as alterações (Commit):
+```bash
+git commit -m "Mensagem do commit"
+```
+
+---
+
+## Sincronização
+
+Baixar e mesclar atualizações do servidor (Pull):
+```bash
+git pull
+```
+
+Enviar suas alterações para o servidor (Push):
+```bash
+git push
+```
+
+---
+
+## Gestão de Branches e Histórico
+
+Ver o histórico simplificado:
+```bash
+git log --oneline
+```
+
+Criar uma nova branch:
+```bash
+git branch <NOME_DA_BRANCH>
+```
+
+Trocar para uma branch existente:
+```bash
+git checkout <NOME_DA_BRANCH>
+```
+
+Criar e já trocar para a nova branch:
+```bash
+git checkout -b <NOME_DA_BRANCH>
+```
+```
